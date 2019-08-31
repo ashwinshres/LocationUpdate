@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0BDAA322FD6F320016EEB8 /* LocationServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BDAA122FD6F320016EEB8 /* LocationServiceConstants.swift */; };
+		5D0BDAA422FD6F320016EEB8 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0BDAA222FD6F320016EEB8 /* LocationService.swift */; };
 		5D5F175D22FD43A600C8A245 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F175C22FD43A600C8A245 /* AppDelegate.swift */; };
 		5D5F175F22FD43A600C8A245 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F175E22FD43A600C8A245 /* ViewController.swift */; };
 		5D5F176222FD43A600C8A245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5F176022FD43A600C8A245 /* Main.storyboard */; };
 		5D5F176422FD43A700C8A245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D5F176322FD43A700C8A245 /* Assets.xcassets */; };
 		5D5F176722FD43A700C8A245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5F176522FD43A700C8A245 /* LaunchScreen.storyboard */; };
+		5D5F177122FD45AC00C8A245 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F176F22FD45AC00C8A245 /* Events.swift */; };
+		5D5F177222FD45AC00C8A245 /* RTServerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F177022FD45AC00C8A245 /* RTServerService.swift */; };
+		5D5F177422FD467000C8A245 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F177322FD467000C8A245 /* LocationHandler.swift */; };
+		6610AF09938AB83B64DF74BE /* Pods_LocationUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E64D1A83AB6C59BF36C3E /* Pods_LocationUpdate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B1D8177406D1650E3DAC9C4 /* Pods-LocationUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationUpdate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocationUpdate/Pods-LocationUpdate.debug.xcconfig"; sourceTree = "<group>"; };
+		364E64D1A83AB6C59BF36C3E /* Pods_LocationUpdate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocationUpdate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D0BDAA122FD6F320016EEB8 /* LocationServiceConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServiceConstants.swift; sourceTree = "<group>"; };
+		5D0BDAA222FD6F320016EEB8 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		5D5F175922FD43A600C8A245 /* LocationUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5F175C22FD43A600C8A245 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D5F175E22FD43A600C8A245 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,10 @@
 		5D5F176322FD43A700C8A245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D5F176622FD43A700C8A245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D5F176822FD43A700C8A245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D5F176F22FD45AC00C8A245 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		5D5F177022FD45AC00C8A245 /* RTServerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTServerService.swift; sourceTree = "<group>"; };
+		5D5F177322FD467000C8A245 /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		723A58003F9E14E218004537 /* Pods-LocationUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationUpdate.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocationUpdate/Pods-LocationUpdate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6610AF09938AB83B64DF74BE /* Pods_LocationUpdate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59626FFF6581692463267C78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B1D8177406D1650E3DAC9C4 /* Pods-LocationUpdate.debug.xcconfig */,
+				723A58003F9E14E218004537 /* Pods-LocationUpdate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D0BDAA022FD6F320016EEB8 /* Location Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5D0BDAA122FD6F320016EEB8 /* LocationServiceConstants.swift */,
+				5D0BDAA222FD6F320016EEB8 /* LocationService.swift */,
+			);
+			path = "Location Helper";
+			sourceTree = "<group>";
+		};
 		5D5F175022FD43A600C8A245 = {
 			isa = PBXGroup;
 			children = (
 				5D5F175B22FD43A600C8A245 /* LocationUpdate */,
 				5D5F175A22FD43A600C8A245 /* Products */,
+				59626FFF6581692463267C78 /* Pods */,
+				73C5B3EC518EF79D515061CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +89,9 @@
 		5D5F175B22FD43A600C8A245 /* LocationUpdate */ = {
 			isa = PBXGroup;
 			children = (
+				5D5F177322FD467000C8A245 /* LocationHandler.swift */,
+				5D0BDAA022FD6F320016EEB8 /* Location Helper */,
+				5D5F176E22FD45AC00C8A245 /* RT Server */,
 				5D5F175C22FD43A600C8A245 /* AppDelegate.swift */,
 				5D5F175E22FD43A600C8A245 /* ViewController.swift */,
 				5D5F176022FD43A600C8A245 /* Main.storyboard */,
@@ -64,6 +102,23 @@
 			path = LocationUpdate;
 			sourceTree = "<group>";
 		};
+		5D5F176E22FD45AC00C8A245 /* RT Server */ = {
+			isa = PBXGroup;
+			children = (
+				5D5F176F22FD45AC00C8A245 /* Events.swift */,
+				5D5F177022FD45AC00C8A245 /* RTServerService.swift */,
+			);
+			path = "RT Server";
+			sourceTree = "<group>";
+		};
+		73C5B3EC518EF79D515061CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				364E64D1A83AB6C59BF36C3E /* Pods_LocationUpdate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D5F176B22FD43A700C8A245 /* Build configuration list for PBXNativeTarget "LocationUpdate" */;
 			buildPhases = (
+				6C8F6F55DA18E8DE9068228F /* [CP] Check Pods Manifest.lock */,
 				5D5F175522FD43A600C8A245 /* Sources */,
 				5D5F175622FD43A600C8A245 /* Frameworks */,
 				5D5F175722FD43A600C8A245 /* Resources */,
+				DD96652CC7DDCE5C27E74DEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +187,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C8F6F55DA18E8DE9068228F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LocationUpdate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD96652CC7DDCE5C27E74DEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LocationUpdate/Pods-LocationUpdate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocationUpdate/Pods-LocationUpdate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D5F175522FD43A600C8A245 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D0BDAA422FD6F320016EEB8 /* LocationService.swift in Sources */,
+				5D0BDAA322FD6F320016EEB8 /* LocationServiceConstants.swift in Sources */,
+				5D5F177422FD467000C8A245 /* LocationHandler.swift in Sources */,
+				5D5F177122FD45AC00C8A245 /* Events.swift in Sources */,
 				5D5F175F22FD43A600C8A245 /* ViewController.swift in Sources */,
+				5D5F177222FD45AC00C8A245 /* RTServerService.swift in Sources */,
 				5D5F175D22FD43A600C8A245 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,9 +391,11 @@
 		};
 		5D5F176C22FD43A700C8A245 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B1D8177406D1650E3DAC9C4 /* Pods-LocationUpdate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LocationUpdate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Skyway-Innovation.LocationUpdate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,9 +411,11 @@
 		};
 		5D5F176D22FD43A700C8A245 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 723A58003F9E14E218004537 /* Pods-LocationUpdate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LocationUpdate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +423,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Skyway-Innovation.LocationUpdate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
